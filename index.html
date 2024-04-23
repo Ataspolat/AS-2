@@ -14,7 +14,7 @@
     <div class="position-relative">
         <img src="img/banner-bg.png" class="w-100">
         <div class="m-5">
-            <div class="">
+            <div class="px-5">
                 <div class="row">
                     <div class="col-5">
                         <div class="text-light position-absolute display-6 fw-bold top-0">
@@ -58,9 +58,9 @@
                 </div>
             </div>
             <div class="position-absolute top-0 my-5">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="">
+                <div class="p-5">
+                    <div class="row">
+                        <div class="col-7">
                             <div class="text-light display-3">
                                 Art Factory is free
                             </div>
@@ -79,10 +79,10 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="">
-                            <img src="img/slider-icon.png" class="w-100">
+                        <div class="col-5">
+                            <div class="">
+                                <img src="img/slider-icon.png" class="w-100">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,6 +178,31 @@
                 <img src="img/right-image.png" class="w-100">
             </div>
         </div>
+    </div>
+    <div>
+        <img src="img/Untitled.png" class="w-100">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01</li>
+                    <li class="splide__slide">Slide 02</li>
+                    <li class="splide__slide">Slide 03</li>
+                </ul>
+            </div>
+        </div>
+        <script src="path-to-the-file/splide.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var splide = new Splide('.splide', {
+                    type: 'loop',
+                    drag: 'free',
+                    snap: true,
+                    perPage: 3,
+                });
+
+                splide.mount();
+            })
+        </script>
     </div>
     <div class="">
         <div class="display-3 py-4 text-center">

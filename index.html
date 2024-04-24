@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
 </head>
 
 <body class="container-xl">
@@ -69,7 +70,8 @@
                                     for YOU
                                 </div>
                                 <div class="text-light py-5">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam suscipit maxime
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam suscipit
+                                    maxime
                                     iure
                                     vel
                                     inventore?
@@ -181,32 +183,100 @@
             </div>
         </div>
     </div>
-    <div>
-        <img src="img/Untitled.png" class="w-100">
-        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
+    <div class="bg-image2">
+        <div class="splide splide-properties" role="group">
+            <div class="splide__track p-5">
                 <ul class="splide__list">
-                    <li class="splide__slide">Slide 01</li>
-                    <li class="splide__slide">Slide 02</li>
-                    <li class="splide__slide">Slide 03</li>
+                    <li class="splide__slide">
+                        <div class="bg-light p-5 text-center">
+                            <div class="mb-4">
+                                <img src="img/about-icon-01.png" alt="" class="">
+                            </div>
+                            <div class="h5 my-3">
+                                First Box Service
+                            </div>
+                            <div class="mb-4">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam esse obcaecati dolore,
+                                mollitia expedita soluta.
+                            </div>
+                            <span>
+                                <a class="btn btn-dark fw-semibold rounded-pill px-4" href="#">
+                                    Schedule a visit
+                                </a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="bg-light p-5 text-center">
+                            <div class="mb-4">
+                                <img src="img/about-icon-01.png" alt="" class="">
+                            </div>
+                            <div class="h5 my-3">
+                                First Box Service
+                            </div>
+                            <div class="mb-4">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam esse obcaecati dolore,
+                                mollitia expedita soluta.
+                            </div>
+                            <span>
+                                <a class="btn btn-dark fw-semibold rounded-pill px-4" href="#">
+                                    Schedule a visit
+                                </a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="bg-light p-5 text-center">
+                            <div class="mb-4">
+                                <img src="img/about-icon-01.png" alt="" class="">
+                            </div>
+                            <div class="h5 my-3">
+                                First Box Service
+                            </div>
+                            <div class="mb-4">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam esse obcaecati dolore,
+                                mollitia expedita soluta.
+                            </div>
+                            <span>
+                                <a class="btn btn-dark fw-semibold rounded-pill px-4" href="#">
+                                    Schedule a visit
+                                </a>
+                            </span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-        <script src="path-to-the-file/splide.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var splide = new Splide('.splide', {
-                    type: 'loop',
-                    drag: 'free',
-                    snap: true,
-                    perPage: 3,
-                });
-
-                splide.mount();
-            })
-        </script>
     </div>
-    <div class="">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide-properties', {
+                type: "loop",
+                autoplay: 1,
+                interval: 3e3,
+                arrows: 0,
+                pagination: 0,
+                pauseOnHover: 0,
+                perMove: 1,
+                perPage: 3,
+                gap: "1.5rem",
+                breakpoints: {
+                    1199: { perPage: 2, },
+                    991: { perPage: 2, },
+                    767: { perPage: 1, },
+                    575: { perPage: 1, }
+                },
+                classes: {
+                    arrows: 'bs-class-arrows',
+                    arrow: 'bs-class-arrow',
+                    prev: 'bs-class-arrow--prev',
+                    next: 'bs-class-arrow--next',
+                },
+            });
+            splide.mount();
+        });
+    </script>
+    <div class="my-5">
         <div class="display-3 py-4 text-center">
             Frequently Asked Question
         </div>
@@ -219,18 +289,18 @@
                     <div class="h3 fw-bold">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     </div>
-                    <div class="py-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, possimus tempora praesentium
-                        saepe
-                        cumque cum earum, iure, quis voluptate dignissimos repellat similique aliquam mollitia totam?
+                    <div class="py-4 text-secondary">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem sed quidem, maiores
+                        labore molestiae saepe dolorum nostrum voluptatem excepturi esse, fugiat aliquid rerum ea
+                        possimus voluptas similique dolorem consequatur nisi.
                     </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero non quae et earum atque. Vel
-                        sapiente dolorem fugiat, numquam impedit quos libero. Quibusdam dolor nostrum, placeat culpa
-                        doloremque esse error?
+                    <div class="text-secondary">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ipsa odit, eum adipisci dolores
+                        quos? Modi, quo veniam unde voluptatibus non voluptatum dicta optio ullam autem, deserunt sint!
+                        Dicta, quia?
                     </div>
-                    <div class="py-3">
-                        Email: <a href="#">email@company.com</a>
+                    <div class="py-4">
+                        Email: <a href="#" class="text-decoration-none">email@company.com</a>
                     </div>
                     <a href="#">
                         <button type="button" class="btn btn-success">CONTACT US</button>

@@ -1,0 +1,7 @@
+.bg-image1 {
+    background-image: url("../img/banner-bg.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
